@@ -5,9 +5,9 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
     environment:
-      POSTGRES_USER: demo
+      POSTGRES_USER: todo_app
       POSTGRES_PASSWORD: secret
-      POSTGRES_DB: demo
+      POSTGRES_DB: todo_app
     ports:
       - "5432:5432"
 
