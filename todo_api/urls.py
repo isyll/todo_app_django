@@ -1,4 +1,4 @@
 from django.urls import path
-from .views import TodosViews
+from .views import TodoListApiView
 
-urlpatterns = [path("test/", TodosViews.handleTest)]
+urlpatterns = [path("api/", TodoListApiView.as_view())]
